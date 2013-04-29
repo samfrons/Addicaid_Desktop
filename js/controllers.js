@@ -36,6 +36,30 @@ function SOSSignalCtrl($scope, $http, $navigate) {
     $scope.pageTitle = "";
 }
 
+function NewsCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function VideoCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function ReadingCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function PHelpCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function DailyDoseCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function BuddyPodCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
 
 /* ALL THE OTHER CONTROLLER PAGES I NEED TO DEMO 
 

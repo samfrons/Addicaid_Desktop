@@ -19,14 +19,17 @@
 <!--<div id="map_canvas" ui-map="myMap" class="map"-->
      <!--ui-event="{'map-click': 'addMarker($event)', 'map-zoom_changed': 'setZoomMessage(myMap.getZoom())' }"-->
      <!--ui-options="mapOptions">-->
-<!--</div>-->
+<!--</div>
 <ul class="options">
 <li  class="map_top"ng-tap="$navigate.go('/filter', 'slide')"><button class="map_top">filter</button></li>
 <li class="grid-6"><input class="grid-12" type="text" placeholder="search"></input></li>
 <li class=" map_top" ng-tap="$navigate.go('/meetinglist', 'slide')"><button class="map_top">list</button></li>
-    </ul>
+    </ul>-->
 <section class="meetinglist desktop">
+    <h1>Filter by:dsaff
+        <br/></h1>
     <article ng-repeat="meeting in meetings | orderBy:'distanceValue'">
+
     <!--<article ng-repeat="meeting in meetings | filter:{'fellowship.name':'AlcoholicsAnonymous'} | orderBy:'distanceValue'">-->
         <ng-include src="views.meetingDetail" ng-controller="MeetingDetailCtrl"></ng-include>
     </article>

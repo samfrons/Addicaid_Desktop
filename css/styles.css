@@ -369,14 +369,21 @@ aside.right_side {
   min-height: 60px;
   width: 28.91%;
   margin: 0 0 0 5%;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
   /* background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgba(20, 136, 203, 1)), color-stop(1, rgba(20, 136, 203, .5)) ) */ }
   aside.right_side.map-popup {
     width: 100px; }
   aside.right_side.AA {
-    background-color: rgba(10, 72, 119, 0.5);
+    background-color: rgba(10, 72, 119, 0.9);
+    border-radius: 100px;
+    height: 100px;
     /*background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgba(255,0,18,1)), color-stop(1, rgba(255,0,50,.9)) ) */ }
   aside.right_side.NA {
-    background-color: rgba(202, 22, 26, 0.5); }
+    background-color: rgba(202, 22, 26, 0.9);
+    border-radius: 100px;
+    height: 100px; }
 
 div.filter_fellowship {
   height: 70px; }
@@ -408,6 +415,7 @@ div.filter_fellowship {
   height: 77px;
   background-repeat: no-repeat;
   background-image: url(../images/calendar.png);
+  background-position: 0px 5px;
   text-align: left; }
   .timeandday.map-popup {
     height: auto;
@@ -421,10 +429,13 @@ div.filter_fellowship {
     top: 0px;
     font-size: 1.2em; }
   .timeandday p.day {
-    padding: 8px 0 0 0; }
+    padding: 0px 0 0 0; }
   .timeandday span.distance {
     font-weight: bold;
-    color: white; }
+    color: white;
+    top: -15px;
+    position: relative;
+    text-align: center; }
 
 ul.filter_day li {
   width: 14.2%;
@@ -781,8 +792,28 @@ img.top_icons {
   .down .left_side {
     right: 75%; }
 
+ul.inline-list.squeezed li {
+  margin-left: 0 !important; }
+
+.circle.dimensions {
+  height: 72px;
+  width: 72px; }
+
+input.sos {
+  margin: 0 !important; }
+
+.sos_head {
+  margin: 0 0 70px 0; }
+
 .meetinglist.desktop {
   float: left;
   width: 30%;
   display: inline-block;
   margin: 0; }
+
+.sos_send {
+  margin: 10px 0 0 0px; }
+
+hgroup.grids.grid-7 {
+  color: red !important;
+  font-size: 0.75em; }
