@@ -45,6 +45,19 @@
     <!-- Analytics service -->
     <script src="js/lib/analyticsService.js"></script>
 
+
+ <!-- Foundation scripts -->
+    <script src="js/zepto.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/foundation.js"></script>
+    <script src="js/foundation.forms.js"></script>
+    <script src="js/foundation.dropdown.js"></script>
+    <script src="js/foundation.tooltips.js"></script>
+    <script src="js/custom.modernizr.js"></script>
+     
+
+
+
     <script src="js/app.js"></script>
     <script src="js/services-meeting.js"></script>
     <script src="js/services-filter.js"></script>
@@ -78,5 +91,15 @@
 <body ng-controller="AppCtrl">
 <mobile-view></mobile-view>
 
+<script>
+  document.write('<script src=/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+<script>
+  $(function(){
+    $(document).foundation();    
+  })
+</script>
 </body>
 </html>

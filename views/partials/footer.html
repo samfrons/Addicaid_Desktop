@@ -1,9 +1,20 @@
-<nav>
-	<!--<button class="feedback_button">feedback</button>-->
-    <ul class="bottom">
-        <li class="grid-3 map" ng-tap="$navigate.go('/map', 'slide')"><img src="images/map_icon.png"><br/>map</li>
-        <li class="grid-3 filter" ng-tap="$navigate.go('/filter', 'slide')"><img src="images/search_icon.png"><br/>search</li>
-        <li class="grid-3 saved" ng-tap="$navigate.go('/meetingfavorites', 'slide')"><img src="images/save_icon.png"><br/>saved</li>
-        <li class="grid-3 rate" ng-tap="$navigate.go('/rate', 'slide')"><img src="images/rate_icon.png"><br/>rate</li>
-    </ul>
-</nav>
+<footer class="row">
+    <div class="large-12 columns">
+      
+      <div class="row">
+        <div class="large-5 columns">
+          <p>&copy; Twistor Labs inc, 2013</p>
+        </div>
+        <div class="large-7 columns">
+          <ul class="inline-list right">
+            <li ng-tap="$navigate.go('/map', 'slide')"><a href="#">About Us</a><br/>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">For Investors</a></li>
+            <li><a href="#">Section 5</a></li>
+            <li><a href="#">Section 6</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>

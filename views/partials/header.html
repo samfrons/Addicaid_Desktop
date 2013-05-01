@@ -1,11 +1,51 @@
 <header class="grids grid-12">
-    <button class="grids grid-2 back" ng-tap="$navigate.go('/home', 'slide')""><!--back--></button>
-    <img  ng-tap="$navigate.go('/home', 'slide')"  class="top_icons" src="images/search.png"/>
+    
+    
+
+<img src="images/nav_icon.png" class="top_icons" data-dropdown="drop1"/>
+<ul id="drop1" class="f-dropdown">
+	<li><h6 class="title"  ng-tap="$navigate.go('/profile', 'slide')"><img class="side_icon" src="images/samfrons.png"/>Me</h6></li>
+  <li>
+        <h6 class="title" ng-tap="$navigate.go('/events', 'slide')"><img class="side_icon" src="images/addicaid_events.png"/>Events</h6>
+      </li>
+  <li><h6 class="title"  ng-tap="$navigate.go('/map', 'slide')"><img class="side_icon" src="images/meeting_icon.png"/>Meetings</h6></li>
+  <li>
+        <h6 class="title" ng-tap="$navigate.go('/members', 'slide')"><img class="side_icon" src="images/social.png"/>Members</h6>
+      </li>
+      <li>
+        <h6 class="title" ng-tap="$navigate.go('/dailydose', 'slide')"><img class="side_icon" src="images/dailydose_icon.png"/>Daily Dose</h6>
+      </li>
+      <li>
+        <h6 class="title" ng-tap="$navigate.go('/news', 'slide')"><img class="side_icon" src="images/news_icon.png"/>News</h6>
+      </li>
+      <li>
+        <h6 class="title" ng-tap="$navigate.go('/phelp', 'slide')"><img class="side_icon" src="images/professional.png"/>Professional Help</h6>
+      </li>
+      <li>
+        <h6 class="title" ng-tap="$navigate.go('/music', 'slide')"><img class="side_icon" src="images/music_icon.png"/>Music</h6>
+      </li>
+
+          <li>
+        <h6 class="title" ng-tap="$navigate.go('/video', 'slide')"><img class="side_icon" src="images/video_icon.png"/>Video</h6>
+      </li>
+
+         <li>
+        <h6 class="title" ng-tap="$navigate.go('/reading', 'slide')"><img class="side_icon" src="images/books.png"/>Reading</h6>
+      </li>
+
+     
+     <li>
+      <h6 class="title" ng-tap="$navigate.go('/sossignal', 'slide')"><img class="side_icon" src="images/sos_signal.png"/>SOS ALERT <span class="sos_number">6</span></h6>
+    </li>
+</ul>
+<button class="grids grid-2 back addicaid_icon" ng-tap="$navigate.go('/home', 'slide')""></button>
+<img  ng-tap="$navigate.go('/home', 'slide')"  class="top_icons" src="images/search.png"/>
+
+
+
      <input class="main_search" type="text" placeholder="search for meetings, activities, people, and cool inspiration"/>
      <img ng-tap="$navigate.go('/signup', 'slide')" class="top_icons" src="images/setting.png"/>
      <img ng-tap="$navigate.go('/signup', 'slide')" class="top_icons" src="images/inbox.png"/>
-     <img ng-tap="$navigate.go('/sossignal', 'slide')" class="top_icons" src="images/sos_signal.png"/>&nbsp;
-
-
-     <img  ng-tap="$navigate.go('/home', 'slide')"  class="top_icons" src="images/home.png"/>
+     <img ng-tap="$navigate.go('/sossignal', 'slide')" class="top_icons" src="images/sos_signal.png"/>
+      <img  ng-tap="$navigate.go('/events', 'slide')"  class="top_icons addicaid_events_icon" src="images/addicaid_events.png"/>
 </header>

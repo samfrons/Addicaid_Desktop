@@ -8,27 +8,33 @@
   </div>
 
   <!-- End Header and Nav -->
-
   <div class="row">
 
+        
  <!-- Nav Sidebar -->
         <!-- Main Feed -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="large-6 columns push-3">
-
+    <div class="panel large-6 columns push-3">
       <!-- Feed Entry -->
-      <div class="row dq_entry">
+      <div class="row entry dq_entry">
         <div class="small-2 large-1 columns "><img class="circle" src="images/questionmark.jpg" /></div>
-        <div class="small-9 large-10 columns">
-             <input type="text" class="daily_question" placeholder="Daily Question: If a genie said he will give you anything you wanted as long as you kept your recovery goals forever, what would you do?"/>
+        <div class="small-9 large-11 columns">
+          <h5><strong>Daily Question!</strong>If a genie said he will give you anything you wanted as long as you kept your recovery goals forever, what would you do?</h5>
+             <input type="text" class="daily_question" placeholder="And you can't say 'I wish I didn't abuse drugs and could do them for fun!'"/>
         </div>
       </div>
       <!-- End Feed Entry -->
 
       <div class="row entry member_entry">
+        <article class="grids grid-12 meeting_entry">
+    <aside class="grids grid-1 saveaside">
+        <button class="grids grid-5 save" type="submit" ng-tap="toggleFavorite(meeting)">
+            <img ng-src="{{getStarImgSrc(meeting.isFavorite)}}">
+        </button>
+    </aside>
         <div class="small-3 large-2 columns "><img class="circle" src="images/dimitri.jpg" /></div>
         <div class="small-9 large-10 columns">
-          <p><strong>Boris .</strong>Rock Bottom: When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
+          <h6><strong>Dimitri V.</strong> just  answered his <strong>Rock Bottom</strong></h6><p>When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
           <ul class="inline-list">
             <li><button>Add to Pod</button></li>
             <li><button>Invite to meeting</button></li>
@@ -39,12 +45,12 @@
 
       <!-- Feed Entry -->
       <div class="row entry dd_entry">
-        <div class="small-3 large-2 columns"><img class="circle" src="images/dd_buzzl.jpg" /></div>
+        <div class="small-3 large-2 columns"><img class="circle" src="images/questionmark.jpg" /></div>
         <div class="small-9 large-10 columns">
-          <p><strong>Daily Dose:</strong>What would be the best thing in recovery?</p>
+          <h5><strong>Daily Dose:</strong>What would be the best thing in recovery?</h5>
           <ul class="inline-list word_options">
                 <li><button>Serenity</button></li>
-            <li><button>Professional Success</button></li>
+            <li><button ng-tap="toggleFavorite(meeting)">Professional Success</button></li>
             <li><button>Soberity</button></li>
             <li><button>Safely Party</button></li>
             <li><button>Get supportive friends</button></li>
@@ -61,66 +67,66 @@
         
         <div class="small-3 large-2 columns "><img class="circle" src="images/addicaid_feed_icon.png" /></div>
         <div class="small-9 large-10 columns ">
-          <iframe src="http://embed.ted.com/talks/dan_pallotta_the_way_we_think_about_charity_is_dead_wrong.html" width="450" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe src="http://embed.ted.com/talks/dan_pallotta_the_way_we_think_about_charity_is_dead_wrong.html" width="100%" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           <p>Activist and fundraiser Dan Pallotta calls out the double standard that drives our broken relationship to charities. </p>
           <ul class="inline-list">
-            <li><a href="">Reply</button></li>
-            <li><a href="">Share</button></li>
+            <li><a href="http://www.amazon.com/gp/product/0061120154/"><button>Share</button></a></li>
+            <li><button>Favorite</button></li>
           </ul>
 
 
-          <h6>2 Comments</h6>
+          <h6>1 Comment</h6>
+          <input type="text" class="comment" placeholder="what did you think of it?"/>
           <div class="row">
-            <div class="small-3 large-2 columns"><img class="circle" src="" /></div>
-            <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+            <div class="small-3 large-2 columns"><img class="circle small" src="images/member4.jpg" /></div>
+            <div class="small-9 large-10 columns"><p>The notion that charities should be able to invest in fundraising activities seems so obvious that we might wonder what regulators are thinking in restricting such activity. To suppose it is a Puritan heritage....</p></div>
+            <button>read all</button>
           </div>
+
+
         </div>
-        
       </div>
       
 
       <!-- Feed Entry -->
       <div class="row entry news_entry">
-        
+        <a href="http://well.blogs.nytimes.com/2013/02/04/effective-addiction-treatment/">
         <div class="small-3 large-2 columns "><img class="circle" src="images/addiction_article.jpg" /></div>
         <div class="small-9 large-10 columns ">
           <p><strong>Effective Addiction Treatment:</strong>Recent groundbreaking findings that (surprise!) addiction needs a new kind of treatment method due to lack of success.</p>
-          <ul class="inline-list">
-            <li><a href="">Reply</button></li>
-            <li><a href="">Share</button></li>
+             <ul class="inline-list">
+            <li><a href="http://www.amazon.com/gp/product/0061120154/"><button>Share</button></a></li>
+            <li><button>Favorite</button></li>
           </ul>
 
 
           <h6>2 Comments</h6>
           <div class="row">
-            <div class="small-3 large-2 columns"><img class="circle" src="" /></div>
+            <div class="small-3 large-2 columns"><img class="circle small" src="images/member2.jpg" /></div>
             <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
           </div>
         </div>
-        
+        </a>
       </div>
       <!-- End Feed Entry -->
 
       <div class="row entry meeting_entry">
         
-        <div class="small-3 large-2 columns "><img class="circle" src="images/aa_meeting_calendar.jpg" /></div>
+        <div class="small-3 large-2 columns "><img class="circle" src="images/aa_meeting_calendar.png" /></div>
         <div class="small-9 large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-          <ul class="inline-list">
-            <li><button>Reply</button></li>
+          <hgroup class="meeting_info">
+          <h4>NA: <strong>Hope Without Dope (Urban Life Center)</strong></h4>
+          <p class="address"><strong>1135 O'Farrell St San Francisco, CA 94109</strong>, 56 members</p>
+          <p class="tags"><strong>Tags:</strong> Young People, Snacks + Coffee, Great Venue, Fellowship</p>
+        </hgroup>
+          <ul class="inline-list squeezed">
+            <li><button>Join</button></li>
+            <li><button>Calendar</button></li>
+            <li><button>Directions</button></li>
             <li><button>Share</button></li>
+            <li><button>Invite</button></li>
           </ul>
 
-
-          <h6>2 Comments</h6>
-          <div class="row">
-            <div class="small-3 large-2 columns"><img sclass="circle" rc="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
-          <div class="row">
-            <div class="small-3 large-2 columns"><img class="circle" src="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
         </div>
       </div>
       <!-- End Feed Entry -->
@@ -133,7 +139,6 @@
         <div class="small-9 large-10 columns">
           <p><strong>Under The Volcano</strong>by Malcom Lowry: Geoffrey Firmin, a former British consul, has come to Quauhnahuac, Mexico. His debilitating malaise is drinking, an activity that has overshadowed his life. On the most fateful day</p>
           <ul class="inline-list">
-            <li><a href="">Read it:</a></li>
             <li><a href="http://www.amazon.com/gp/product/0061120154/"><button>Amazon</button></a></li>
             <li><button>Online stores</button></li>
             <li><button>Library</button></li>
@@ -156,8 +161,12 @@
    <div class="row entry social_entry">
         <div class="small-3 large-2 columns"><img class="circle" src="images/bender.jpg" /></div>
         <div class="small-9 large-10 columns">
-          <p><strong>Bender Bending Rodríguez</strong>Just joined Robots In Love with Sex meeting on Tuesdays at 4PM.</p>
-          <ul class="inline-list">
+          <p><strong>Bender Bending Rodríguez</strong> just joined <strong>Robot Addicts</strong> meeting on <strong>Tuesdays at 4PM.<strong></p>
+          <hgroup>
+          <p class="address"><strong>1135 O'Farrell St San Francisco, CA 94109</strong>, 56 members</p>
+          <p class="tags"><strong>Tags:</strong> Young People, Snacks + Coffee, Great Venue, Fellowship</p>
+        </hgroup>
+          <ul class="inline-list squeezed">
             <li><button>Join</button></li>
             <li><button>Calendar</button></li>
             <li><button>Directions</button></li>
@@ -175,60 +184,64 @@
     <div class="large-3 columns pull-6">
       <div class="panel">
       <div class="row your_panel">
-            <div class="small-5 large-5 columns"><img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/samf.jpg" /></div>
-            <div class="small-9 large-7 columns"><h3>Sam Frons</h3><p>Edit profile</p></div>
+            <a href="#/profile" ng-tap="$navigate.go('/profile', 'slide')"><div class="small-5 large-5 columns"><img class="circle" src="images/samf.jpg" /></div>
+            <div class="small-9 large-7 columns" ><h3>Sam Frons</h3></a>
+              <a href="#"><h6><img class="side_icon" src="images/edit_icon.png"/>Edit profile</h6></a></div>
           </div>
         
         <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
      
       <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/buddypod.png"/>Your Pod</h5>
+        <a href="#/buddypod" ng-tap="$navigate.go('/buddypod', 'slide')"><h5 class="title"><img class="side_icon" src="images/buddypod.png"/>Your Pod</h5></a>
         <figure class="small-2 large-2 buddypod">
-        <img class= "circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" />
+        <span data-tooltip class="has-tip" title="Big Mickey"><img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" /></span>
         <!--<figcaption>Big Mickey</figcaption>-->
       </figure>
 
          <figure class="small-2 large-2 buddypod">
-        <img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
-        <!--<figcaption>Samir C.</figcaption>-->
+        <span data-tooltip class="has-tip" title="S. Chugh"><img ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
+        </span><!--<figcaption>Samir C.</figcaption>-->
       </figure>
 
         <figure class="small-2 large-2 buddypod">
-        <img class= "circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" />
+          <span data-tooltip class="has-tip" title="Data_Superhero">
+        <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" /></span>
         <!--<figcaption>Data Superhero</figcaption>-->
       </figure>
 
          <figure class="small-2 large-2 buddypod">
-        <img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+          <span data-tooltip class="has-tip" title="Tom Waits">
+        <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+      </span>
         <!--<figcaption>T. Waits</figcaption>-->
       </figure>
 
       </section>
- <section class="section">
+ <section class="section closer">
         <h5 class="title"  ng-tap="$navigate.go('/map', 'slide')"><img class="side_icon" src="images/meeting_icon.png"/>Meetings</h5>
       </section>
-      <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/social.png"/>Members</h5>
+      <section class="section closer">
+        <h5 class="title" ng-tap="$navigate.go('/members', 'slide')"><img class="side_icon" src="images/social.png"/>Members</h5>
       </section>
-      <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/dailydose_icon.png"/>Daily Dose</h5>
+      <section class="section closer">
+        <h5 class="title" ng-tap="$navigate.go('/dailydose', 'slide')"><img class="side_icon" src="images/dailydose_icon.png"/>Daily Dose</h5>
       </section>
-      <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/news_icon.png"/>News</h5>
+      <section class="section closer">
+        <h5 class="title" ng-tap="$navigate.go('/news', 'slide')"><img class="side_icon" src="images/news_icon.png"/>News</h5>
       </section>
-      <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/professional.png"/>Professional Help</h5>
+      <section class="section closer">
+        <h5 class="title" ng-tap="$navigate.go('/phelp', 'slide')"><img class="side_icon" src="images/professional.png"/>Professional Help</h5>
       </section>
-      <section class="section">
+      <section class="section closer">
         <h5 class="title" ng-tap="$navigate.go('/music', 'slide')"><img class="side_icon" src="images/music_icon.png"/>Music</h5>
       </section>
 
-          <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/video_icon.png"/>Video</h5>
+          <section class="section closer">
+        <h5 class="title" ng-tap="$navigate.go('/video', 'slide')"><img class="side_icon" src="images/video_icon.png"/>Video</h5>
       </section>
 
-         <section class="section">
-        <h5 class="title"><img class="side_icon" src="images/books.png"/>Reading</h5>
+         <section class="section closer">
+        <h5 class="title" ng-tap="$navigate.go('/reading', 'slide')"><img class="side_icon" src="images/books.png"/>Reading</h5>
       </section>
       </div>
 
@@ -240,8 +253,8 @@
     <!-- Right Sidebar -->
     <!-- On small devices this column is hidden -->
     <aside class="large-3 columns hide-for-small">
-      <p><img src="images/fencing_ad.jpg" /></p>
-      <p><img src="images/therapy_ad.jpg" /></p>
+      <p><img class="ad" src="images/fencing_ad.jpg" /></p>
+      <p><img class="ad" src="images/therapy_ad.jpg" /></p>
     </aside>
 
   </div>

@@ -1,6 +1,168 @@
-
 <ng-include src="views.header"></ng-include>
 
-<section class="view dailydose">
-</section>
-<ng-include src="views.footer"></ng-include>
+  <div class="row info_head">
+    <div class="large-12 columns sos_head">
+      <div class="panel">
+        
+        <div class="row">
+            <div class="small-2 large-3 columns"><img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/genie.png" /></div>
+            <div class="small-9 large-9 columns">
+            	<h1>Today's Question</h1>
+            	<h3>If a genie said he will give you anything you wanted as long as you kept your recovery goals forever, what would you do?</h3>
+             <input type="text" class="daily_question" placeholder="And you can't say 'I wish I didn't abuse drugs and could do them for fun!'"/>
+
+            
+           
+	
+
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- End Header and Nav -->
+
+  <div class="row down">
+
+ <!-- Nav Sidebar -->
+        <!-- Main Feed -->
+    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+    <div class="panel large-6 columns push-3">
+<h2>Today's Doses</h2>
+
+<div class="row entry member_entry">
+        <div class="small-3 large-2 columns "><img class="circle dimensions" height="75" width="75" src="images/member1.jpg" /></div>
+        <div class="small-9 large-10 columns">
+                    <hgroup class="meeting_info">
+          <h4>Fill in the blanks</strong><button class="goal_setting">200 points</button></h4>
+          
+        </hgroup>
+          <ul class="inline-list squeezed">
+       
+           <li><button>Share</button></li>
+            <li><button>Keep Private</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row entry member_entry">
+        <div class="small-3 large-2 columns "><img class="circle dimensions" height="75" width="75" src="images/member1.jpg" /></div>
+        <div class="small-9 large-10 columns">
+                    <hgroup class="meeting_info">
+          <h4>Upload a gif of how you feel</strong><button class="goal_setting">300 points</button></h4>
+          
+        </hgroup>
+          <ul class="inline-list squeezed">
+             <li><button>Share</button></li>
+            <li><button>Keep Private</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row entry dd_entry">
+        <div class="small-3 large-2 columns"><img class="circle" src="images/questionmark.jpg" /></div>
+        <div class="small-9 large-10 columns">
+          <h4>What would be the best thing in recovery?</h4>
+          <ul class="inline-list word_options">
+                <li><button>Serenity</button></li>
+            <li><button ng-tap="toggleFavorite(meeting)">Professional Success</button></li>
+            <li><button>Soberity</button></li>
+            <li><button>Safely Party</button></li>
+            <li><button>Get supportive friends</button></li>
+            <li><input type="text" placeholder="something else"></li>
+          </ul>
+
+          <button>share</button>
+          <button>keep secret</button>
+        </div>
+        
+      </div>
+<h2>Activity</h2>
+<div class="row entry member_entry">
+        <div class="small-3 large-2 columns "><img class="circle" src="images/member2.jpg" /></div>
+        <div class="small-9 large-10 columns">
+                 <hgroup class="meeting_info">
+          <h4>NA: <strong>Hope Without Dope (Urban Life Center)</strong><button class="goal_setting">MODERATING</button></h4>
+          <p class="address"><strong>1135 O'Farrell St San Francisco, CA 94109</strong>, 56 members</p>
+          <p class="tags"><strong>Tags:</strong> Young People, Snacks + Coffee, Great Venue, Fellowship</p>
+        </hgroup>
+          <ul class="inline-list squeezed">
+            
+           <li><button>Add to Pod</button></li>
+            <li><button>Invite to meeting</button></li>
+            <li><button>Send message</button></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- This is source ordered to be pulled to the left on larger screens -->
+    <div class="large-3 columns pull-6">
+      <div class="panel">
+
+
+      <div class="row your_panel">
+            <a href="#/profile" ng-tap="$navigate.go('/profile', 'slide')"><div class="small-5 large-5 columns"><img class="circle" src="images/samf.jpg" /></div>
+            <div class="small-9 large-7 columns" ><h3>Sam Frons</h3></a>
+              <a href="#"><h6>42,000 points</h6><h6>202 doses</h6></a></div>
+          </div>
+        
+        <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+     
+      <section class="section">
+        <a href="#/buddypod" ng-tap="$navigate.go('/buddypod', 'slide')"><h4 class="title">Rewards</h4></a>
+        <figure class="small-2 large-2 buddypod">
+        <span data-tooltip class="has-tip" title="Big Mickey"><img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/fire_badge.png" /></span>
+        <figcaption><strong>On Fire!</strong></figcaption>
+      </figure>
+
+
+      </section>
+
+  </div>
+        
+      </div>
+    </div>
+ 
+ 
+    <!-- Right Sidebar -->
+
+<aside class="large-3 columns hide-for-small">
+    <p><img src="images/pingpong.jpg" /></p>
+      <p><img src="images/therapy_ad.jpg" /></p>
+  </aside>
+    <!-- On small devices this column is hidden -->
+
+
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-5 columns">
+          <p>&copy; Twistor Labs inc, 2013</p>
+        </div>
+        <div class="large-7 columns">
+          <ul class="inline-list right">
+            <li ng-tap="$navigate.go('/map', 'slide')"><a href="#">About Us</a><br/>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">For Investors</a></li>
+            <li><a href="#">Section 5</a></li>
+            <li><a href="#">Section 6</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+

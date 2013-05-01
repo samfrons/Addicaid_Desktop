@@ -19,7 +19,7 @@ function RateCtrl($scope, $http, $navigate) {
     $scope.pageTitle = "Rate";
 }
 
-function RateRewardCtrl($scope, $http, $navigate) {
+function RewardsCtrl($scope, $http, $navigate) {
     $scope.pageTitle = "Rate Reward";
 }
 
@@ -57,6 +57,14 @@ function DailyDoseCtrl($scope, $http, $navigate) {
 }
 
 function BuddyPodCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function MembersCtrl($scope, $http, $navigate) {
+    $scope.pageTitle = "";
+}
+
+function EventsCtrl($scope, $http, $navigate) {
     $scope.pageTitle = "";
 }
 

@@ -7,23 +7,23 @@
         <div class="row">
             <div class="small-5 large-2 columns"><img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/samf.jpg" /></div>
             <div class="small-9 large-3 columns">
-            	<h1>Sam Frons</h1>
-            	<h2>24 | Female</h2>
+            	<h2>Sam Frons</h2>
+            	<h1>24 | Female</h1>
             	<h3>Brooklyn, NY</h3>
             	<h4>420,000 points</h3>
             	
             </div>
 
             <div class="small-9 large-3 columns">
-            <h3><strong>Moderating:</strong>Alcohol</h3>
-            	<h3><strong>Abstaining:</strong>Pot, Cigarettes</h3>
+            <h3><strong>Moderating:</strong> Alcohol</h3>
+            	<h3><strong>Abstaining:</strong> Pot, Cigarettes</h3>
             	</div>
 
 
                <div class="small-9 large-3 columns">
-            	<h1>Add to Pod</h1>
-            	<h2>Message</h2>
-            	<h3>Invite Out</h3>
+            	<button class="medium button secondary">Add to Pod</button><br/>
+            	<button class="medium button secondary">Invite to Meeting</button><br/>
+            	<button class="medium button secondary">Message</button>
             	
             </div>
 
@@ -38,138 +38,77 @@
 
   <!-- End Header and Nav -->
 
-  <div class="row down">
+  <div class="row down_no">
 
  <!-- Nav Sidebar -->
         <!-- Main Feed -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="large-6 columns push-3">
+    <div class="panel large-8 columns push-3">
 <h1 class="left_head">Feed</h1>
       <!-- Feed Entry -->
-      <div class="row member_entry large-6 columns push-3">
-        <div class="small-3 large-2 columns "><img class="circle" src="images/dimitri.jpg" /></div>
+<div class="row entry member_entry">
+        <div class="small-3 large-2 columns "><img class="circle" src="images/rubix_event.jpg" /></div>
         <div class="small-9 large-10 columns">
-          <p><strong>Boris .</strong>Rock Bottom: When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
-          <ul class="inline-list">
-            <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End Feed Entry -->
-
-      <hr />
-
-      <!-- Feed Entry -->
-      <div class="row dd_entry large-6 columns push-3">
-        <div class="small-3 large-2 columns"><img class="circle" src="images/dd_buzzl.jpg" /></div>
-        <div class="small-9 large-10 columns">
-          <p><strong>Daily Dose:</strong>What would be the best thing in recovery?</p>
-          <ul class="inline-list">
-                <li><a href="">Serenity</a></li>
-            <li><a href="">Professional Success</a></li>
-            <li><a href="">Soberity</a></li>
-            <li><a href="">Safely Party</a></li>
-            <li><a href="">Get supportive friends</a></li>
-            <li><a href="">Other</a></li>
-
+                 <hgroup class="meeting_info">
+           <h4>How To Solve A  Rubix Cube</strong><button class="goal_setting">$10</button></h4>
+        </hgroup>
+          <ul class="inline-list squeezed">
             
+         <li><button>Attend</button></li>
+            <li><button>Invite People</button></li>
+            <li><button>Share</button></li>
           </ul>
         </div>
       </div>
+
+<!-- End Feed Entry -->
+<h1 class="left_head">Daily Doses</h1>
+      <!-- Feed Entry -->
+      <div class="row entry dd_entry">
+        <div class="small-3 large-2 columns"><img class="circle" src="images/questionmark.jpg" /></div>
+        <div class="small-9 large-10 columns">
+          <h5><strong>Daily Dose:</strong>What would be the best thing in recovery?</h5>
+          <ul class="inline-list word_options">
+                <li><button>Serenity</button></li>
+            <li><button ng-tap="toggleFavorite(meeting)">Professional Success</button></li>
+            <li><button>Soberity</button></li>
+            <li><button>Safely Party</button></li>
+            <li><button>Get supportive friends</button></li>
+            <li><input type="text" placeholder="something else"></li>
+          </ul>
+
+          <button>share</button>
+          <button>keep secret</button>
+        </div>
+        
+      </div>
       <!-- End Feed Entry -->
 
-      <hr />
-<h1 class="left_head">Daily Dose</h1>
-      <!-- Feed Entry -->
-      <div class="row news_entry large-6 columns push-3">
-        <div class="small-3 large-2 columns "><img class="circle" src="images/addiction_article.jpg" /></div>
+
+      <h1 class="left_head">Meetings And Events</h1>
+      <div class="row entry news_entry">
+        
+        <div class="small-3 large-2 columns "><img class="circle" src="images/addicaid_feed_icon.png" /></div>
         <div class="small-9 large-10 columns ">
-          <p><strong>Effective Addiction Treatment:</strong>Recent groundbreaking findings that (surprise!) addiction needs a new kind of treatment method due to lack of success.</p>
+          <iframe src="http://embed.ted.com/talks/dan_pallotta_the_way_we_think_about_charity_is_dead_wrong.html" width="100%" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <p>Activist and fundraiser Dan Pallotta calls out the double standard that drives our broken relationship to charities. </p>
           <ul class="inline-list">
-            <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
+            <li><a href="http://www.amazon.com/gp/product/0061120154/"><button>Share</button></a></li>
+            <li><button>Favorite</button></li>
           </ul>
 
 
-          <h6 >2 Comments</h6>
+          <h6>1 Comment</h6>
+          <input type="text" class="comment" placeholder="what did you think of it?"/>
           <div class="row">
-            <div class="small-3 large-2 columns"><img class="circle" src="" /></div>
-            <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+            <div class="small-3 large-2 columns"><img class="circle small" src="images/member4.jpg" /></div>
+            <div class="small-9 large-10 columns"><p>The notion that charities should be able to invest in fundraising activities seems so obvious that we might wonder what regulators are thinking in restricting such activity. To suppose it is a Puritan heritage....</p></div>
+            <button>read all</button>
           </div>
+
+
         </div>
       </div>
-      <!-- End Feed Entry -->
-<hr />
-      <div class="row meeting_entry large-6 columns push-3 ">
-        <div class="small-3 large-2 columns "><img class="circle" src="images/aa_meeting_calendar.jpg" /></div>
-        <div class="small-9 large-10 columns">
-          <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-          <ul class="inline-list">
-            <li><a href="">Reply</a></li>
-            <li><a href="">Share</a></li>
-          </ul>
-
-
-          <h6>2 Comments</h6>
-          <div class="row">
-            <div class="small-3 large-2 columns"><img sclass="circle" rc="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
-          <div class="row">
-            <div class="small-3 large-2 columns"><img class="circle" src="http://placehold.it/50x50&text=[img]" /></div>
-            <div class="small-9 large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
-          </div>
-        </div>
-      </div>
-      <!-- End Feed Entry -->
-
-      <hr />
-
-      <!-- Feed Entry -->
-      <h1 class="left_head">Favorites</h1>
-      <div class="row large-6 columns push-3">
-        <div class="small-3 large-2 columns"><img class="circle" src="images/underthevolcano.jpg" /></div>
-        <div class="small-9 large-10 columns">
-          <p><strong>Under The Volcano</strong>by Malcom Lowry: Geoffrey Firmin, a former British consul, has come to Quauhnahuac, Mexico. His debilitating malaise is drinking, an activity that has overshadowed his life. On the most fateful day</p>
-          <ul class="inline-list">
-            <li><a href="">Read it:</a></li>
-            <li><a href="http://www.amazon.com/gp/product/0061120154/">Amazon</a></li>
-            <li><a href="">Online stores</a></li>
-            <li><a href="">Library</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End Feed Entry -->
-
-      <hr />
-
-      <!-- Feed Entry -->
-      <div class="row large-6 columns push-3">
-       <iframe src="https://embed.spotify.com/?uri=spotify:track:4RjvJrkTa7gYOvk5tm94YW" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
-      </div>
-      <!-- End Feed Entry -->
-
-      <hr />
-
-      <!-- Feed Entry -->
-      <h1 class="left_head">Meetings</h1>
-   <div class="row social_entry large-6 columns push-3">
-        <div class="small-3 large-2 columns"><img class="circle" src="images/bender.jpg" /></div>
-        <div class="small-9 large-10 columns">
-          <p><strong>Bender Bending Rodríguez</strong>Just joined Robots In Love with Sex meeting on Tuesdays at 4PM.</p>
-          <ul class="inline-list">
-            <li><a href="">Join</a></li>
-            <li><a href="">Calendar</a></li>
-            <li><a href="">Directions</a></li>
-            <li><a href="">Share</a></li>
-            <li><a href="">Invite</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End Feed Entry -->
-
-
     </div>
 
     <!-- This is source ordered to be pulled to the left on larger screens -->
@@ -178,31 +117,61 @@
 
 
       	<div class="row">
-            <div class="small-5 large-11 columns"><strong>Interests:</strong>
-            	<p>When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
+            <div class="small-5 large-11 columns"><h3>Interests:</h3>
+              <button class="tiny button secondary">music</button>
+  <button class="tiny button secondary">art</button>
+  <button class="tiny button secondary">computers</button>
+  <button class="tiny button secondary">sports</button>
+ <button class="tiny button secondary">film/video</button>
+  <button class="tiny button secondary">academics</button>
+  <button class="tiny button secondary">FOOD</button>
           </div>
       </div>
 
       	          <div class="row">
-            <div class="small-5 large-11 columns"><strong>Rock Bottom:</strong>
+            <div class="small-5 large-11 columns"><h3>Rock Bottom</h3>
             	<p>When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
             </div>
         </div>
 
         <div class="row">
-            <div class="small-5 large-11 columns"><strong>Moment of Clarity:</strong>
+            <div class="small-5 large-11 columns"><h3>Moment of Clarity</h3>
             	<p>When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
           </div>
       </div>
 
        <div class="row">
-            <div class="small-5 large-11 columns"><strong>Buddy Pod:</strong>
-            	<p>When I woke up in Sibera with an empty wallet, broken RAM drive and realized my parrot was missing. I got home and he said to me 'Polly needs DiDi back'</p>
+            <div class="small-5 large-11 columns"><h3>Buddy Pod</h3>
+            
+
+        <figure class="small-2 large-2 buddypod">
+        <span data-tooltip class="has-tip" title="Big Mickey"><img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" /></span>
+        <!--<figcaption>Big Mickey</figcaption>-->
+      </figure>
+
+         <figure class="small-2 large-2 buddypod">
+        <span data-tooltip class="has-tip" title="S. Chugh"><img ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
+        </span><!--<figcaption>Samir C.</figcaption>-->
+      </figure>
+
+        <figure class="small-2 large-2 buddypod">
+          <span data-tooltip class="has-tip" title="Data_Superhero">
+        <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" /></span>
+        <!--<figcaption>Data Superhero</figcaption>-->
+      </figure>
+
+         <figure class="small-2 large-2 buddypod">
+          <span data-tooltip class="has-tip" title="Tom Waits">
+        <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+      </span>
+        <!--<figcaption>T. Waits</figcaption>-->
+      </figure>
+
           </div>
       </div>
 
        <div class="row">
-            <div class="small-5 large-11 columns"><strong>Social Icons:</strong>
+            <div class="small-5 large-11 columns">
             	<p></p>
           </div>
       </div>
