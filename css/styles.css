@@ -132,11 +132,14 @@ button.settings {
   width: 8%; }
 
 section.signup {
-  background-image: url(../images/6.jpg);
+  background: url(../images/dtopbk.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0 auto;
-  margin-top: 50px;
   text-align: center;
-  padding: 10px;
+  padding: 200px 0 0 0;
   height: 100%;
   color: white;
   text-transform: lowercase; }
@@ -158,6 +161,17 @@ button.signup_skip {
 section.filterpage, section.ratepage {
   background-repeat: repeat;
   height: 100%; }
+
+img.book {
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6); }
+
+div.large-4.book {
+  max-height: 300px;
+  margin: 0 0 20px 0; }
+  div.large-4.book ul {
+    margin-left: 0; }
+    div.large-4.book ul li {
+      border: 1px solid #dedede; }
 
 section.meetinglist {
   background-image: url(../images/blurlight.png);
@@ -831,7 +845,8 @@ input.comment {
     right: 75%; }
 
 ul.inline-list.squeezed li {
-  margin-left: 0 !important; }
+  margin-left: 0 !important;
+  border: 1px solid #dedede; }
 
 .circle.dimensions {
   height: 72px;
@@ -855,6 +870,17 @@ input.sos {
 
 aside.panel {
   width: 24%; }
+
+ul.social_login li {
+  width: 60px;
+  height: 60px;
+  padding: 5px; }
+  ul.social_login li img {
+    height: 50px; }
+ul.social_login .facebook {
+  background-color: #3d5a9c; }
+ul.social_login .twitter {
+  background-color: #1ab2e9; }
 
 .sos_head {
   padding: 0px; }
