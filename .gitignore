@@ -1,17 +1,5 @@
+node_modules
+dist
+.tmp
 .sass-cache
-
-# Intellij stuff
-.idea
-*.iml
-
-.DS_Store
-
-
-
-
-
-#.tmp
-
-#node_modules
-#dist
-#app/components
+app/components
