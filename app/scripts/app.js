@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('addicaidApp', ['ajoslin.mobile-navigate', 'angular-leaflet', 'ui'])
+angular.module('addicaidApp', ['ajoslin.mobile-navigate', 'angular-leaflet', 'ui', 'ui.bootstrap'])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', { // default

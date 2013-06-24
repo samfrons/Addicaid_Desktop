@@ -14,151 +14,157 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
 
 
 
-        <div class="large-6 columns panel">
-
-            <!-- sign up screen 1
+      <div class="large-6 columns panel">
+        <carousel>
+          <slide active="slides[0].active">
+            <!-- sign up screen 1 -->
             <article class="signup_box">
-                <h1>Sign Up</h1>
-            <form>
-            <input type="text" placeholder="make a username"/>
-            <input type="text" placeholder="email"/>
-            <input type="text" placeholder="password"/>
+              <h1>Sign Up</h1>
+              <form>
+                <input type="text" placeholder="make a username"/>
+                <input type="text" placeholder="email"/>
+                <input type="text" placeholder="password"/>
 
-            <h5>or connect with</h5>
-            <ul class="social_login">
-                <li class="facebook"><img src="images/facebook.png"/></li>
-                <li class="twitter"><img src="images/twitter.png"/></li>
-            </ul>
+                <h5>or connect with</h5>
+                <ul class="social_login">
+                  <li class="facebook"><img src="images/facebook.png"/></li>
+                  <li class="twitter"><img src="images/twitter.png"/></li>
+                </ul>
 
-            <p>And don't worry- no one will ever know!</p>
-            <div class="meta">
-            <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">Let's get started!</button></p>
-            </div>
-            </form>
+                <p>And don't worry- no one will ever know!</p>
+                <div class="meta">
+                  <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">Let's get started!</button></p>
+                </div>
+              </form>
             </article>
-            -->
+          </slide>
 
-            <!-- sign up screen 2 member (a) or healthcare (b) provider box
+          <slide active="slides[1].active">
+            <!-- sign up screen 2 member (a) or healthcare (b) provider box -->
             <article class="signup_box">
               <h1>Why are you here?</h1>
               <h4>we're here to connect blah with blah tagline</h4>
-            <form>
-              <ul>
+              <form>
+                <ul>
 
-             <li> <button>i'm here to get better</button></li>
-             <li><button>i'm here to help. (healthcare professional/establishment)</button></li>
-            </ul>
-            <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
-            </form>
+                  <li> <button>i'm here to get better</button></li>
+                  <li><button>i'm here to help. (healthcare professional/establishment)</button></li>
+                </ul>
+                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
+              </form>
             </article>
-            -->
+          </slide>
 
-
-            <!-- sign up screen 3a member goal settings
+          <slide active="slides[2].active">
+            <!-- sign up screen 3a member goal settings -->
             <article class="signup_box">
               <h1>What are your goals here</h1>
               <form>
-              <h4>I am <div class="styled-select">
-                              <select id="customDropdown1" class="medium">
-                                <option value="" selected="selected">Moderating</option>
-                                <option value="" selected="selected">Abstaining</option>
-                              </select>
-                          </div> from
+                <h4>I am <div class="styled-select">
+                  <select id="customDropdown1" class="medium">
+                    <option value="" selected="selected">Moderating</option>
+                    <option value="" selected="selected">Abstaining</option>
+                  </select>
+                </div> from
 
 
-                        <div class="styled-select">
-                              <select id="customDropdown1" class="medium">
-                                <option value="" selected="selected">Alcohol</option>
-                                <option value="" selected="selected">Pot</option>
-                              </select>
-                          </div> </h4>
-                          <button> add another</button>
-            <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
-            </form>
-            </article> -->
+                  <div class="styled-select">
+                    <select id="customDropdown1" class="medium">
+                      <option value="" selected="selected">Alcohol</option>
+                      <option value="" selected="selected">Pot</option>
+                    </select>
+                  </div> </h4>
+                <button> add another</button>
+                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
+              </form>
+            </article>
+          </slide>
 
+          <slide active="slides[3].active">
             <!-- sign up screen 3b healthcare details-->
             <article class="signup_box">  <form>
-                <h1>I am a <div class="styled-select">
-                    <select id="customDropdown1" class="medium">
-                        <option value="" selected="selected">therapist</option>
-                        <option value="" selected="selected">something else?</option>
-                        <option value="" selected="selected">in patient center</option>
-                        <option value="" selected="selected">out patient center</option>
+              <h1>I am a <div class="styled-select">
+                <select id="customDropdown1" class="medium">
+                  <option value="" selected="selected">therapist</option>
+                  <option value="" selected="selected">something else?</option>
+                  <option value="" selected="selected">in patient center</option>
+                  <option value="" selected="selected">out patient center</option>
 
-                    </select>
-                </div>
+                </select>
+              </div>
 
-                </h1>
-                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
+              </h1>
+              <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
             </form>
             </article>
+          </slide>
 
-
-            <!-- sign up screen 4a member basic info (some should be filled in already if they connected via fbook)
+          <slide active="slides[4].active">
+            <!-- sign up screen 4a member basic info (some should be filled in already if they connected via fbook) -->
             <article class="signup_box">
               <h1>Tell us a bit about yourself so we can find you your people</h1>
               <form>
-              <h4>I am a <input type="text" placeholder="how old?"/>
-                <div class="styled-select">
-                              <select id="customDropdown1" class="medium">
-                                <option value="" selected="selected">male</option>
-                                <option value="" selected="selected">female</option>
-                                <option value="" selected="selected">other</option>
-                              </select>
-                          </div> living around <input type="text" placeholder="zipcode?"/>
+                <h4>I am a <input type="text" placeholder="how old?"/>
+                  <div class="styled-select">
+                    <select id="customDropdown1" class="medium">
+                      <option value="" selected="selected">male</option>
+                      <option value="" selected="selected">female</option>
+                      <option value="" selected="selected">other</option>
+                    </select>
+                  </div> living around <input type="text" placeholder="zipcode?"/>
 
 
-                        <div class="styled-select">
-                              <select id="customDropdown1" class="medium">
-                                <option value="" selected="selected">Alcohol</option>
-                                <option value="" selected="selected">Pot</option>
-                              </select>
-                          </div> </h4>
-                          <button> add another</button>
-            <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
-            </form>
+                  <div class="styled-select">
+                    <select id="customDropdown1" class="medium">
+                      <option value="" selected="selected">Alcohol</option>
+                      <option value="" selected="selected">Pot</option>
+                    </select>
+                  </div> </h4>
+                <button> add another</button>
+                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
+              </form>
             </article>
-            -->
+          </slide>
 
-
-
-
-            <!-- sign up screen 5a member interests
+          <slide active="slides[5].active">
+            <!-- sign up screen 5a member interests -->
             <article class="signup_box">
               <h1>Tell us some of your interests</h1>
               <form>
-                 <button class="tiny button secondary">music</button>
-              <button class="tiny button secondary">art</button>
-              <button class="tiny button secondary">computers</button>
-              <button class="tiny button secondary">sports</button>
-               <button class="tiny button secondary">music</button>
-              <button class="tiny button secondary">art</button>
-              <button class="tiny button secondary">computers</button>
-              <button class="tiny button secondary">sports</button>
-               <input type="text" placeholder="other"/>
-               <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
+                <button class="tiny button secondary">music</button>
+                <button class="tiny button secondary">art</button>
+                <button class="tiny button secondary">computers</button>
+                <button class="tiny button secondary">sports</button>
+                <button class="tiny button secondary">music</button>
+                <button class="tiny button secondary">art</button>
+                <button class="tiny button secondary">computers</button>
+                <button class="tiny button secondary">sports</button>
+                <input type="text" placeholder="other"/>
+                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
               </form>
             </article>
-            -->
+          </slide>
 
-            <!-- sign up screen 6a member rock bottom/ moment of clarity
+          <slide active="slides[6].active">
+            <!-- sign up screen 6a member rock bottom/ moment of clarity -->
             <article class="signup_box">
               <h1>Writing time!</h1>
               <form>
                 <h4>What was the worst time of your life?</h4>
-               <input type="text" placeholder="this is the rock bottom"/>
-            <h4>And what made you decide you wanted to get better</h4>
+                <input type="text" placeholder="this is the rock bottom"/>
+                <h4>And what made you decide you wanted to get better</h4>
                 <input type="text" placeholder="this is the moment of clarity"/>
-               <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
+                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
               </form>
-            </article>-->
+            </article>
+          </slide>
+
+        </carousel>
 
 
 
 
-
-        </div>
+      </div>
         <!--box end-->
 
     </div>
