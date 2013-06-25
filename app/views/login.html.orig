@@ -80,6 +80,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
             </article>
           </slide>
 
+          <slide active="slide4.active">
           <slide active="slides[3].active">
             <!-- sign up screen 3b healthcare details-->
             <article class="signup_box">
@@ -161,4 +162,11 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
     </div>
     <!-- row end -->
 
+<<<<<<< HEAD
+    <footer><hr/><img src="../images/footer.png"></footer>
+
 </section>
+
+=======
+</section>
+>>>>>>> 79cffda70afae1d6451e45e7ac618db871d4242a
