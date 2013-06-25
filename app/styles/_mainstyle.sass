@@ -107,21 +107,23 @@ html
  font-size: .7em
  -webkit-font-smoothing: antialiased
  /*background-color: rgba(245,114,29,.9)*/
- background-color: rgba(40,85,162,1)
+ background-color: white
 
 
 body
  padding: 0
- font-family: 'Gotham', sans-serif
+ font-family: Alright Sans, Open sans, sans-serif !important
  -webkit-font-smoothing: antialiased
  background-size: auto
 
-
+input
+ border-radius: 0px !important
 
 button
  text-transform: uppercase !important
  background-color: #f9f9f9
-
+ color: gray
+ border: 1px solid gray !important
 input::-webkit-input-placeholder
  font-size: .95em
 
@@ -131,6 +133,8 @@ form
 
 header
  overflow: visible !important
+ input
+  color: white !important
  h1
   position: relative
   text-transform: capitalize
@@ -162,13 +166,19 @@ section
  margin: 40px 0 0 0
 
 header.grid-12
- background-color: #f2f2f2
- border-bottom: 1px solid #d9d9d9
+ background-image: url(../images/cheerleaders.jpeg)
+ border-bottom: 0px solid #d9d9d9
  background-repeat: repeat-x
- background-size: auto 55px
  position: fixed
+ box-shadow: 0px 1px 3px black
  z-index: 1000
  top: 0px
+
+.carouselbox
+ width: 40%
+ margin-right: 100px
+ min-height: 420px
+ padding: 0px
 
 .mapclass
  height: 90%
@@ -185,7 +195,6 @@ header
   min-height: 33px !important
 
 button
- margin: 20px
  border-style: none
 
 button[type="submit"]
@@ -215,7 +224,8 @@ button.back
  margin: 3px 0 3px 15px
  height: 40px
  width: 40px
- border-radius: 5px
+ box-shadow: none
+ border-style: none !important
 
 button.settings
  background-image: url(../images/profile.png)
@@ -225,7 +235,7 @@ button.settings
  width: 8%
 
 section.signup
- background: url(../images/dtopbk.png) no-repeat center center fixed
+ /*background: url(../images/dtopbk.png) no-repeat center center fixed*/
  -webkit-background-size: cover
  -moz-background-size: cover
  -o-background-size: cover
@@ -236,9 +246,10 @@ section.signup
  padding: 200px 0 0 0
  height: 100%
  color: white
- text-transform: lowercase
+ text-transform: capitalize
  input
-  margin: 2px 0 7px 0
+  margin:  0 0 10px 25px !important
+  border-radius: 0px !important
   font-size: 1.3em
   width: 90%
  h3
@@ -246,6 +257,15 @@ section.signup
   font-size: 10px
   color: white
   text-transform: lowercase
+
+article.signup_box
+ h1
+  text-transform: uppercase
+  font-family: Alright Sans
+  margin: 30px 0 0 0 
+  text-align: left
+  text-indent: 25px
+
 
 button.signup_skip
  position: fixed
@@ -326,8 +346,11 @@ button.facebook
 
 
 button.submit_simple
- width: 100%
+ width: 90%
  height: 50px
+ margin: 0px
+
+
 
 
  input
@@ -415,8 +438,10 @@ input.zipcode
 section.ratepage
  font-size: .8em
 
- h1, h2
+ h1
+ h2
   text-align: center
+  text-transform: uppercase !important
 
 .rate_submit
  width: 95% !important
@@ -510,7 +535,11 @@ aside.right_side
   border-radius: 100px
   height: 100px
 
-
+.feed_icon
+ min-height: 60px !important
+ img.circle
+  border-radius: 72px
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5)
 
 div.filter_fellowship
  height: 70px
@@ -867,7 +896,8 @@ nav
    width: 22.2%
    margin: 0
 
-
+.panel
+ box-shadow: 0px 1px 3px black
 
   /* desktop */
 .section-container.vertical-nav
@@ -875,15 +905,20 @@ nav
 
 .your_panel
  height: 50px
-
-img.ad
- -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5)
+p.ad
+ font-family: Alright Sans
+ font-weight: bold
+ -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5)
+ padding: 5px
+ img.ad
+  
 
 figure.buddypod
  display: inline-block
  width: 18.66667%
  overflow: hidden
  img
+  border-radius: 50%
 
  figcaption
   text-align: center
@@ -944,6 +979,9 @@ input.main_search
  margin: 0px !important
  border: none
  box-shadow: none !important
+.main_search::-webkit-input-placeholder
+ color: white !important
+
 
 input.daily_question
  margin: 0 !important
@@ -952,13 +990,11 @@ input.daily_question
  max-width: 480px
 input.daily_question::-webkit-input-placeholder
 
-img.circle
- border-radius: 72px
- -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5)
+
 
 img.top_icons
  height: 25px
- opacity: 0.6
+ -webkit-filter: invert(1)
  margin: 0 5px 0 5px
 .addicaid_events_icon
  height: 30px !important
@@ -967,6 +1003,8 @@ img.top_icons
  height: 250px
  top: 63px
  position: relative
+ div
+  padding-right: 0px
 
 input.comment
  margin: 0 0 5px 0 !important
@@ -980,9 +1018,10 @@ input.comment
   right: 75%
 
 ul.inline-list.squeezed
+ margin: 10px 0 0 0
  li
   margin-left: 0 !important
-  border: 1px solid #dedede
+
 
 .circle.dimensions
  height: 72px
@@ -1019,7 +1058,13 @@ ul.social_login
  .twitter
   background-color: rgba(26,178,233,1)
 
-
+.row.login
+ background-image: url(../images/people_background.jpeg)
+ width: auto
+ max-width: none
+ height: 500px
+ padding: 20px 0 20px 0
+ box-shadow: 0px 1px 3px black
 
 .sos_head
  padding: 0px
@@ -1051,7 +1096,7 @@ section.section.closer
  height: 34px
  display: inline-block
  overflow: hidden
-
+ top: 5px
  position: relative
  background: url(../images/new_arrow.jpg) no-repeat right #ddd
  border: 1px solid #ccc
@@ -1092,3 +1137,6 @@ hgroup.grids.grid-7
 button.goal_setting
  font-size: 10px
 
+footer
+ position: relative
+ bottom: -41%

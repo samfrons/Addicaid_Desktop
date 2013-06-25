@@ -1,6 +1,6 @@
 <section class="view signup">
 
-    <div class="row">
+    <div class="row login">
         <div class="large-6 columns">
             <div class="bigdealcontainer">
                 <div class="words"><span class="word1">
@@ -14,7 +14,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
 
 
 
-      <div class="large-6 columns panel">
+      <div class="large-6 columns panel carouselbox">
         <carousel>
           <slide active="slides[0].active">
             <!-- sign up screen 1 -->
@@ -43,12 +43,12 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
             <!-- sign up screen 2 member (a) or healthcare (b) provider box -->
             <article class="signup_box">
               <h1>Why are you here?</h1>
-              <h4>we're here to connect blah with blah tagline</h4>
+              
               <form>
                 <ul>
 
                   <li> <button>i'm here to get better</button></li>
-                  <li><button>i'm here to help. (healthcare professional/establishment)</button></li>
+                  <li><button>i'm here to help. <br/>(healthcare professional/establishment)</button></li>
                 </ul>
                 <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
               </form>
@@ -58,14 +58,14 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[2].active">
             <!-- sign up screen 3a member goal settings -->
             <article class="signup_box">
-              <h1>What are your goals here</h1>
+              <h1>Recovery Goals</h1>
               <form>
                 <h4>I am <div class="styled-select">
                   <select id="customDropdown1" class="medium">
                     <option value="" selected="selected">Moderating</option>
                     <option value="" selected="selected">Abstaining</option>
                   </select>
-                </div> from
+                </div><br/><br/> from
 
 
                   <div class="styled-select">
@@ -82,7 +82,8 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
 
           <slide active="slides[3].active">
             <!-- sign up screen 3b healthcare details-->
-            <article class="signup_box">  <form>
+            <article class="signup_box">
+            <h1>For professional help</h1>  <form>
               <h1>I am a <div class="styled-select">
                 <select id="customDropdown1" class="medium">
                   <option value="" selected="selected">therapist</option>
@@ -102,7 +103,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[4].active">
             <!-- sign up screen 4a member basic info (some should be filled in already if they connected via fbook) -->
             <article class="signup_box">
-              <h1>Tell us a bit about yourself so we can find you your people</h1>
+              <h1>Personal Info</h1>
               <form>
                 <h4>I am a <input type="text" placeholder="how old?"/>
                   <div class="styled-select">
@@ -112,16 +113,6 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
                       <option value="" selected="selected">other</option>
                     </select>
                   </div> living around <input type="text" placeholder="zipcode?"/>
-
-
-                  <div class="styled-select">
-                    <select id="customDropdown1" class="medium">
-                      <option value="" selected="selected">Alcohol</option>
-                      <option value="" selected="selected">Pot</option>
-                    </select>
-                  </div> </h4>
-                <button> add another</button>
-                <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
               </form>
             </article>
           </slide>
@@ -129,7 +120,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[5].active">
             <!-- sign up screen 5a member interests -->
             <article class="signup_box">
-              <h1>Tell us some of your interests</h1>
+              <h1>your interests</h1>
               <form>
                 <button class="tiny button secondary">music</button>
                 <button class="tiny button secondary">art</button>
@@ -170,4 +161,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
     </div>
     <!-- row end -->
 
+    <footer><hr/><img src="../images/footer.png"></footer>
+
 </section>
+
