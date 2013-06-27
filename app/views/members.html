@@ -1,10 +1,10 @@
 
 <div class="row info_head">
-<div class="large-12 columns sos_head">
-    <div class="panel">
+<div class="large-12 columns">
+    <div class="panel member_head">
 
         <div class="row">
-            <div class="small-2 large-3 columns"><img class="circle" ng-tap="$navigate.go('/profile', 'slide')" src="images/friends.jpg" /></div>
+        
             <div class="small-9 large-9 columns">
                 <h1>Yeah! Everyone loves company! Especially misery. Hopefully you don't have it! There's a lot of people JUST LIKE YOU right around the corner</h1>
                 <form class="custom">
@@ -24,7 +24,7 @@
 
 
                                 </div>
-                                <span>within</span>
+                                <span class="smallword">within</span>
                             </li>
 
                             <li>
@@ -37,7 +37,7 @@
                                     </select>
                                 </div>
 
-                                <span>of</span>
+                                <span class="smallword">of</span>
                             </li>
                             <li>
 
@@ -109,7 +109,8 @@
         <div class="small-3 large-2 columns "><img class="circle dimensions" height="75" width="75" src="images/member1.jpg" /></div>
         <div class="small-9 large-10 columns">
             <hgroup class="meeting_info">
-                <h5>Member 1<strong></strong><button class="goal_setting">MODERATING</button></h5>
+                <h5>Fitz Argh. <strong></strong><button class="goal_setting">MODERATING: alcohol</button>
+                    <button class="goal_setting">abstaining: herion</button></h5>
                 <p class="address"><strong>30 | M , Brooklyn, NY</strong></p>
                 <p class="tags"><strong>Interests</strong>   <button class="tiny button secondary">music</button>
                     <button class="tiny button secondary">art</button>
@@ -130,8 +131,7 @@
     <div class="row entry member_entry">
         <div class="small-3 large-2 columns "><img class="circle" src="images/member2.jpg" /></div>
         <div class="small-9 large-10 columns">
-            hgroup class="meeting_info">
-            <h5>Member 1<strong></strong><button class="goal_setting">MODERATING</button></h5>
+            <h5>barney<strong></strong><button class="goal_setting">MODERATING: beer</button></h5>
             <p class="address"><strong>30 | M , Brooklyn, NY</strong></p>
             <p class="tags"><strong>Interests</strong>   <button class="tiny button secondary">music</button>
                 <button class="tiny button secondary">art</button>
@@ -153,7 +153,7 @@
         <div class="small-3 large-2 columns "><img class="circle" src="images/member3.jpg" /></div>
         <div class="small-9 large-10 columns">
             <hgroup class="meeting_info">
-                <h5>Member 1<strong></strong><button class="goal_setting">MODERATING</button></h5>
+                <h5>Mrs. Lich<strong></strong><button class="goal_setting">MODERATING: emotions</button></h5>
                 <p class="address"><strong>30 | M , Brooklyn, NY</strong></p>
                 <p class="tags"><strong>Interests</strong>   <button class="tiny button secondary">music</button>
                     <button class="tiny button secondary">art</button>
@@ -174,8 +174,8 @@
     <div class="row entry member_entry">
         <div class="small-3 large-2 columns "><img class="circle" src="images/member4.jpg" /></div>
         <div class="small-9 large-10 columns">
-            hgroup class="meeting_info">
-            <h5>Member 1<strong></strong><button class="goal_setting">MODERATING</button></h5>
+        
+            <h5>Mad Max<strong></strong><button class="goal_setting">abstaining: cocaine</button></h5>
             <p class="address"><strong>30 | M , Brooklyn, NY</strong></p>
             <p class="tags"><strong>Interests</strong>   <button class="tiny button secondary">music</button>
                 <button class="tiny button secondary">art</button>
@@ -196,7 +196,7 @@
         <div class="small-3 large-2 columns "><img class="circle" src="images/member5.jpg" /></div>
         <div class="small-9 large-10 columns">
             <hgroup class="meeting_info">
-                <h5>Member 1<strong></strong><button class="goal_setting">MODERATING</button></h5>
+                <h5>Princess L. <strong></strong> <button class="goal_setting">abstaining: alcohol</button><button class="goal_setting">MODERATING: Pot</button></h5>
                 <p class="address"><strong>30 | M , Brooklyn, NY</strong></p>
                 <p class="tags"><strong>Interests</strong>   <button class="tiny button secondary">music</button>
                     <button class="tiny button secondary">art</button>
@@ -213,37 +213,16 @@
         </div>
     </div>
 
-    <div class="row entry member_entry">
-        <div class="small-3 large-2 columns "><img class="circle" src="images/member6.jpg" /></div>
-        <div class="small-9 large-10 columns">
-            <hgroup class="meeting_info">
-                <h5>Member 1<strong></strong><button class="goal_setting">MODERATING</button></h5>
-                <p class="address"><strong>30 | M , Brooklyn, NY</strong></p>
-                <p class="tags"><strong>Interests</strong>   <button class="tiny button secondary">music</button>
-                    <button class="tiny button secondary">art</button>
-                    <button class="tiny button secondary">computers</button>
-                    <button class="tiny button secondary">sports</button>
 
-            </hgroup>
-            <ul class="inline-list squeezed">
-
-                <li><button>Add to Pod</button></li>
-                <li><button>Invite to meeting</button></li>
-                <li><button>Send message</button></li>
-            </ul>
-        </div>
-    </div>
 
 
 </div>
 
 <!-- This is source ordered to be pulled to the left on larger screens -->
-<div class="large-3 columns pull-6">
+<div class="large-3 columns pull-6 side_bar">
     <div class="panel">
-
-
-        <div class="row">
-            <div class="small-6 large-12 columns"><h5 class="title"><img class="side_icon" src="images/buddypod.png"/>Members Like You</h5>
+        <div class="row">    
+            <div class="small-5 large-11 columns"><h5 class="title"><img class="side_icon" src="images/buddypod.png"/>Members Like You</h5>
                 <figure class="small-2 large-2 buddypod">
                     <img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" />
                     <!--<figcaption>Big Mickey</figcaption>-->
@@ -263,90 +242,112 @@
                     <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
                     <!--<figcaption>T. Waits</figcaption>-->
                 </figure>
+
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/vishesh.jpeg" />
+                    <!--<figcaption>T. Waits</figcaption>-->
+                </figure>
+                <br/>
+                <figure class="small-2 large-2 buddypod">
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="http://i500.listal.com/image/371219/500full.jpg" />
                     <!--<figcaption>Big Mickey</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="http://i500.listal.com/image/980448/500full.jpg" />
                     <!--<figcaption>Samir C.</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://i500.listal.com/image/1316087/500full.jpg" />
                     <!--<figcaption>Data Superhero</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzDE1jr478KF6XxIrWtGOr8qmPb9It91K6zo583PuP7gQRw0MRkg" />
                     <!--<figcaption>T. Waits</figcaption>-->
                 </figure>
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZRf6PFubr1sOlo1RAoAbotgLBoZf2mKbizrWh48NdqhUuciy" />
+                    <!--<figcaption>T. Waits</figcaption>-->
+                </figure>
+                <br/>
+                <figure class="small-2 large-2 buddypod">
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWLHoHvhgRclXV17xPgnqtHylHAjhm4XEv-Mo3H7k2vJJIso7NOA" />
                     <!--<figcaption>Big Mickey</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbQE3UyiXZ-JgyilvKI_V-Z3V7pVcyLFP1B3iwlfytwp4AjAN0dQ" />
                     <!--<figcaption>Samir C.</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://cbschicago.files.wordpress.com/2013/03/bradley-cooper-featured-image.jpg?w=290" />
                     <!--<figcaption>Data Superhero</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://www.celebrities-with-diseases.com/wp-content/uploads/2010/06/Kristin-Davis.jpg" />
+                    <!--<figcaption>T. Waits</figcaption>-->
+                </figure>
+
+                <figure class="small-2 large-2 buddypod">
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="https://cdn.thewatershed.com/watershed/wp-content/uploads/2012/12/jamie-lee-curtis1.jpg" />
                     <!--<figcaption>T. Waits</figcaption>-->
                 </figure>
             </div>
         </div>
-
+<hr/>
         <div class="row">
             <div class="small-5 large-11 columns"><h5 class="title"><img class="side_icon" src="images/buddypod.png"/>Who's Nearby</h5>
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" />
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXw5r9szGJc0pXMvQGHXxrmMkaMGCabAJ2uQ0jBuDj-ShIZGiOkA" />
                     <!--<figcaption>Big Mickey</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="http://scoop.diamondgalleries.com/Image/NewsImage/4/70680/165523/2" />
                     <!--<figcaption>Samir C.</figcaption>-->
                 </figure>
-
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://media-cache-ec3.pinimg.com/736x/40/60/19/4060196daf4eeee15e1b54bf8054be85.jpg" />
+                    <!--<figcaption>T. Waits</figcaption>-->
+                </figure>
+                <figure class="small-2 large-2 buddypod">
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://media-cache-ec4.pinimg.com/236x/6d/c0/d6/6dc0d62172398a55b83df7bcecd51803.jpg" />
                     <!--<figcaption>Data Superhero</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://media-cache-ec2.pinimg.com/236x/98/8e/3e/988e3eb168011f6dc19461127576779c.jpg" />
                     <!--<figcaption>T. Waits</figcaption>-->
                 </figure>
             </div>
         </div>
-
+<hr/>
         <div class="row">
             <div class="small-5 large-11 columns"><h5 class="title"><img class="side_icon" src="images/buddypod.png"/>SOS Signals</h5>
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/bigmickey.png" />
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="http://media-cache-ec4.pinimg.com/736x/01/99/bb/0199bb5223e70c3c8abe0ff3b1cc0671.jpg" />
                     <!--<figcaption>Big Mickey</figcaption>-->
                 </figure>
-
                 <figure class="small-2 large-2 buddypod">
-                    <img ng-tap="$navigate.go('/profile', 'slide')" src="images/samir.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://media-cache-ec2.pinimg.com/236x/cb/18/7e/cb187e804b2191441ae10b061d3cbb77.jpg" />
+                    <!--<figcaption>T. Waits</figcaption>-->
+                </figure>
+                <figure class="small-2 large-2 buddypod">
+                    <img ng-tap="$navigate.go('/profile', 'slide')" src="http://media-cache-ec3.pinimg.com/736x/a4/dc/a9/a4dca9aa421d0e2a7df34c4caac441aa.jpg" />
                     <!--<figcaption>Samir C.</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/tom.jpeg" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/elena.jpg" />
                     <!--<figcaption>Data Superhero</figcaption>-->
                 </figure>
 
                 <figure class="small-2 large-2 buddypod">
-                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="images/twaits.png" />
+                    <img  ng-tap="$navigate.go('/profile', 'slide')" src="http://www.healthline.com/hlcmsresource/images/slideshow/famous_faces_alcoholism/285x285_slide08_lindsay-lohan.jpg" />
                     <!--<figcaption>T. Waits</figcaption>-->
                 </figure>
             </div>
@@ -359,7 +360,7 @@
 <!-- Right Sidebar -->
 
 <aside class="large-3 columns hide-for-small">
-    <p><img src="images/pingpong_event.png" /></p>
+    <p class="ad"><img src="images/pingpong_event.png" />25 members are attending!</p>
 </aside>
 <!-- On small devices this column is hidden -->
 

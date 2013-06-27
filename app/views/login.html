@@ -42,13 +42,13 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[1].active">
             <!-- sign up screen 2 member (a) or healthcare (b) provider box -->
             <article class="signup_box">
-              <h1>Why are you here?</h1>
+              <h1>Why are you here?</h1><br/><br/>
               
               <form>
                 <ul>
 
-                  <li> <button>i'm here to get better</button></li>
-                  <li><button>i'm here to help. <br/>(healthcare professional/establishment)</button></li>
+                  <li> <button class="why_here">i'm here to get better</button></li><br/>
+                  <li><button class="why_here">i'm here to help. <br/>(healthcare professional/establishment)</button></li>
                 </ul>
                 <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
               </form>
@@ -58,7 +58,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[2].active">
             <!-- sign up screen 3a member goal settings -->
             <article class="signup_box">
-              <h1>Recovery Goals</h1>
+              <h1>Recovery Goals</h1><br/><br/>
               <form>
                 <h4>I am <div class="styled-select">
                   <select id="customDropdown1" class="medium">
@@ -92,9 +92,11 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
                   <option value="" selected="selected">out patient center</option>
 
                 </select>
-              </div>
-
+              </div><br/>
+              <h1>located in <input type='text' class="zipcode" placeholder="zipcode"/>
+</h1> 
               </h1>
+              <br/><br/>
               <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
             </form>
             </article>
@@ -103,16 +105,16 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[4].active">
             <!-- sign up screen 4a member basic info (some should be filled in already if they connected via fbook) -->
             <article class="signup_box">
-              <h1>Personal Info</h1>
+              <h1>Personal Info</h1><br/>
               <form>
-                <h4>I am a <input type="text" placeholder="how old?"/>
-                  <div class="styled-select">
-                    <select id="customDropdown1" class="medium">
+                <h1>I am<input type="text" class="age"placeholder="#"/> years old</h1>
+                  <div class="styled-select gender">
+                    <select id="customDropdown1" class="medium ">
                       <option value="" selected="selected">male</option>
-                      <option value="" selected="selected">female</option>
                       <option value="" selected="selected">other</option>
+                      <option value="" selected="selected">female</option>
                     </select>
-                  </div> living around <input type="text" placeholder="zipcode?"/>
+                  </div><h1> living around <input class="zipcode"type="text" placeholder="zipcode"/></h1>
               </form>
             </article>
           </slide>
@@ -120,16 +122,16 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[5].active">
             <!-- sign up screen 5a member interests -->
             <article class="signup_box">
-              <h1>your interests</h1>
+              <h1>your interests</h1><br/>
               <form>
-                <button class="tiny button secondary">music</button>
-                <button class="tiny button secondary">art</button>
-                <button class="tiny button secondary">computers</button>
-                <button class="tiny button secondary">sports</button>
-                <button class="tiny button secondary">music</button>
-                <button class="tiny button secondary">art</button>
-                <button class="tiny button secondary">computers</button>
-                <button class="tiny button secondary">sports</button>
+                <button class="button secondary">music</button>
+                <button class="button secondary">art</button>
+                <button class="button secondary">computers</button>
+                <button class="button secondary">sports</button>
+                <button class="button secondary">music</button>
+                <button class="button secondary">art</button>
+                <button class="button secondary">computers</button>
+                <button class="button secondary">sports</button>
                 <input type="text" placeholder="other"/>
                 <p ng-tap="$navigate.go('/home', 'slide')"><button class="submit_simple">next</button></p>
               </form>
@@ -139,7 +141,7 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
           <slide active="slides[6].active">
             <!-- sign up screen 6a member rock bottom/ moment of clarity -->
             <article class="signup_box">
-              <h1>Writing time!</h1>
+              <h1>Writing time!</h1><br/>
               <form>
                 <h4>What was the worst time of your life?</h4>
                 <input type="text" placeholder="this is the rock bottom"/>
@@ -160,5 +162,5 @@ I</span> <span class="word2">don't</span> <span class="word3">know</span> <span 
 
     </div>
     <!-- row end -->
-
+<footer></footer>
 </section>
