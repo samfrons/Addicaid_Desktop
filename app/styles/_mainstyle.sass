@@ -1,4 +1,5 @@
 /* style.sass */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro)
 
 $experimental-support-for-mozilla : true !default
 $experimental-support-for-webkit : true !default
@@ -108,18 +109,18 @@ html
  -webkit-font-smoothing: antialiased
  /*background-color: rgba(245,114,29,.9)*/
  background-color: white
- font-family: futura !important
+ font-family: Source Sans Pro !important
  cursor: pointer !important
 
 header
  cursor: pointer !important
 
 *
- font-family: futura !important
+ font-family: Source Sans Pro !important
 
 body
  padding: 0
- font-family: futura !important
+ font-family: Source Sans Pro !important
  -webkit-font-smoothing: antialiased
  background-size: auto
 
@@ -130,10 +131,13 @@ button
  text-transform: uppercase !important
  background-color: #f9f9f9
  color: gray
- border: 1px solid gray !important
+ box-shadow: 0px 1px 2px rgb(128, 128, 128)
+ outline: none !important
 input::-webkit-input-placeholder
  font-size: .95em
 
+form
+ min-height: 200px
 form
  h1
   font-size: 1.3em
@@ -159,7 +163,7 @@ header
   text-shadow: 0px 1px 1px black
   font-size: 3em
 p
- font-family: futura
+ font-family: Source Sans Pro
 
 a
  text-decoration: none
@@ -177,7 +181,7 @@ section
  margin: 40px 0 0 0
 
 header.grid-12
- background-image: url(../images/cheerleaders.jpeg)
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ea5110), color-stop(52%,#f26e1d), color-stop(100%,#ea5110))
  border-bottom: 0px solid #d9d9d9
  background-repeat: repeat-x
  position: fixed
@@ -231,7 +235,7 @@ button.back
  background-image: url(../images/addicaid_a.png)
  @include backgrounds
  background-size: 40px auto
- background-color: #F05122
+
  margin: 3px 0 3px 15px
  height: 40px
  width: 40px
@@ -280,7 +284,7 @@ section.signup
 article.signup_box
  h1
   text-transform: uppercase
-  font-family: futura
+  font-family: Source Sans Pro
   margin: 30px 0 0 0 
   text-align: left
   padding-left: 25px
@@ -352,7 +356,7 @@ button.facebook
  button.filter_submit
 
   color: white
-  font-family: 'futura', sans-serif
+  font-family: 'Source Sans Pro', sans-serif
   margin: 10px 0 50px 0%
   width: 100%
 
@@ -400,7 +404,7 @@ aside.right2_side
  height: 81px
  margin: 0 0 0 -5px
  button
-  font-family: 'futura', sans-serif
+  font-family: 'Source Sans Pro', sans-serif
   text-transform: uppercase
   margin: 0 0 0 -7px
   &:active
@@ -506,7 +510,7 @@ hgroup
  max-height: 85px
  line-height: 10px
  text-transform: capitalize
- font-family: 'futura', sans-serif
+ font-family: 'Source Sans Pro', sans-serif
  color: $main-color
  z-index: -1
  span.meetinglocation
@@ -679,7 +683,7 @@ ul.filter_time
   background-size: 70px auto
   background-repeat: no-repeat
   font-weight: bold
-  font-family: 'futura', sans-serif
+  font-family: 'Source Sans Pro', sans-serif
   img
   &.ui-show
    height: 45px
@@ -854,7 +858,7 @@ div.comment
   h4
    margin: 0
   p
-   font-family: 'futura', sans-serif !important
+   font-family: 'Source Sans Pro', sans-serif !important
    margin: 0
   span.postdate
    color: gray
@@ -980,8 +984,8 @@ figure.buddypod
   text-align: center
 
 .sos_alert
- background-color: rgba(252,62,66,.8)
- box-shadow: inset 0px 1px 2px 4px rgba(252,62,66,1), inset 0px 1px 2px 10px rgba(252,72,86,.7)
+ background-color: rgba(229,52,56,1)
+ box-shadow: inset 0px 1px 2px 4px rgba(219,52,56,1), inset 0px 1px 2px 10px rgba(239,52,56,.6)
  background-image: url(../images/sos_signal.png)
  height: 50px
  background-size: 40px
@@ -995,13 +999,16 @@ figure.buddypod
  cursor: pointer !important
  -webkit-transition: .5s all ease
  &:hover
-  box-shadow: inset 0px 1px 2px 9px rgba(252,62,66,1), inset 0px 1px 2px 29px rgba(252,72,86,.7)
+  box-shadow: inset 0px 1px 2px 9px rgba(252,62,66,1), inset 0px 1px 2px 29px rgba(229,52,56,.8)
   color: white
  &:active
   background-color: rgba(52,62,66,.8)
   box-shadow: inset 0px 1px 2px 9px rgba(52,62,66,1), inset 0px 1px 2px 29px rgba(52,72,86,.7)
 
-
+.row_sos
+ h3
+  color: white
+  text-shadow: 0px 1px 5px black
 
 .section-container
  border: none
@@ -1009,7 +1016,11 @@ figure.buddypod
 .row.dq_entry
  background-image: url(../images/genie.gif)
  background-size: 100% auto
- height: 200px
+ -webkit-filter: hue-rotate(180deg)
+ height: 230px
+ h2
+  color: white
+  text-shadow: 0px 1px 5px black
  input
   height: 60px
  h5
@@ -1017,21 +1028,23 @@ figure.buddypod
   font-size: 1.6em
   font-weight: bold
   line-height: 1.2em
-  text-shadow: 0px 5px 10px black
+  text-shadow: 0px 1px 5px black
 button.faded
  width: 50% 
- margin: 20px 0 0 50%
- opacity: 0.8
+ margin: 5px 0 0 50%
+ opacity: .98
+ font-size: 1.2em
+ box-shadow: 0px 1px 13px rgba(100,100,100,1) 
 
 
 ul.word_options
  li
   margin: 5px
   button
-   background-color: #e9e9e9
+   background-color: white
    border-color: #d0d0d0
-   color: #333333 !important
-   font-size: .7em
+   
+   font-size: .9em
   input
    height: 25px
 
@@ -1088,7 +1101,7 @@ img.top_icons
  top: 63px
  position: relative
  div
-  padding-right: 0px
+  padding-right: 2px
 
 input.comment
  margin: 0 0 5px 0 !important
@@ -1155,7 +1168,7 @@ ul.social_login
  width: auto
  max-width: none
  margin-top: -110px
- height: 500px
+ height: 495px
  padding: 20px 0 20px 0
  box-shadow: 0px 1px 3px black
 
@@ -1173,9 +1186,9 @@ ul.social_login
   button
    width: auto
 
+
 .event_head
  padding: 10px
-
  background-image: url(../images/pizza.gif)
  background-size: 100% auto
  div
@@ -1187,8 +1200,7 @@ ul.social_login
    background-color: rgba(0,0,0,0.7)
    padding: 10px
 
-.price
- margin: 10px 0 0 0
+
 
 .professional_help
  background-image: url(../images/panda.gif)
@@ -1196,7 +1208,7 @@ ul.social_login
  background-position: 0 -50px
  padding: 10px
  div
-  opacity: 0.95
+  opacity: 0.98
   margin-left: 2%
   h1, h3
    color: white
@@ -1204,6 +1216,47 @@ ul.social_login
 .providers
  .row
   margin-right: 0em
+
+img.ph_catogory
+ margin: 20px 0 0 0
+
+li.star5 
+ background-image: url(../images/star.png)
+ min-width: 111px
+ height: 22px
+ color: rgba(0,0,0,0)
+
+
+li.star4 
+ background-image: url(../images/star.png)
+ min-width: 89px
+ height: 22px
+ color: rgba(0,0,0,0)
+
+li.star3 
+ background-image: url(../images/star.png)
+ min-width: 67px
+ height: 22px
+ color: rgba(0,0,0,0)
+
+li.star2
+ background-image: url(../images/star.png)
+ min-width: 111px
+ height: 22px
+ color: rgba(0,0,0,0)
+
+li.star1
+ background-image: url(../images/star.png)
+ min-width: 79px
+ height: 22px
+ color: rgba(0,0,0,0)
+
+
+
+.addresses
+ p
+  color: gray
+  font-weight: bold
 
 .side_bar
  width: 23%
@@ -1272,7 +1325,7 @@ section.section.closer
  overflow: hidden
  top: 5px
  position: relative
- background: url(../images/new_arrow.jpg) no-repeat right #ddd
+ background: url(../images/new_arrow.jpg) no-repeat right #FFF
  border: 1px solid #ccc
  select
   background: transparent
@@ -1311,26 +1364,63 @@ button.share_content
  width: 10%
 
 .sos_send
- margin: 10px 0 0 0px
+ margin: -15px 0 0 0px
+ color: red
+ font-size: 2em
+
+.bp_send
+ margin: 0 0 0 100px
+ color: red
+ font-size: 2em
+
+.sos_feed_title
+
+
+
 
 hgroup.grids.grid-7
  color: red !important
  font-size: .75em
 
 button.goal_setting
- font-size: 10px
+ font-size: 12px
  color: gray
  border-style: none !important
+ box-shadow: none
+ font-weight: 400
+ text-transform: capitalize
 
 .push 
  li
   button
    margin: 10px
 
+button.tiny
+ background-color: white !important
+ box-shadow: 0px 1px 2px rgb(108, 108, 108)
+ font-size: 12px !important
+ color: rgb(85, 85, 85) !important
+
 .status
  padding: 20px !important
  
  font-size: 1.4em
+
+.event
+ 
+ font-size: 1.5em !important
+
+.price
+ margin: 0 0 0 10px
+ border-style: solid !important
+ border: 1px solid red !important
+
+button.create_event
+ color: red
+ font-size: 1.7em
+ width: 100%
+ background: white
+ padding: 5px
 
 footer
  background-image: url(../images/footer.png)
